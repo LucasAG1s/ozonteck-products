@@ -1,3 +1,5 @@
+import { Url } from "next/dist/shared/lib/router/router";
+
 export interface Product {
   id: number;
   name: string;
@@ -5,8 +7,10 @@ export interface Product {
   price: number;
   image: string;
   category: string;
-  stock: number;
+  inci_name?: string;
   rating: number;
   process_number?: string;
   composition?: string;
+  pdf_link: Url;
+  video_url: Url;
 }
