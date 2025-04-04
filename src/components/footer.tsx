@@ -1,12 +1,19 @@
-'use client'
+'use client';
 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { JSX } from 'react';
 
-export default function Footer(): JSX.Element {
+interface FooterProps {
+  isVisible?: boolean;
+}
+
+export default function Footer({ isVisible = true }: FooterProps): JSX.Element | null {
+  if (!isVisible) return null;
+
   return (
-    <footer className="bg-[#F3F3F3] py-8 mt-auto">
+    <footer className="bg-[#F3F3F3] py-8 mt-auto" style={{ zIndex: 1 }}>
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           <div className="text-center md:text-left">

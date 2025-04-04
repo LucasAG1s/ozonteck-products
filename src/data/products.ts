@@ -13,16 +13,15 @@ export const capilarProducts = [
   {
     id: 1,
     name: "Shampoo Ozon Kesen",
-    description: "Leave-in sem enxágue desenvolvido com tecnologia ozonizada exclusiva, proporcionando proteção térmica avançada e hidratação profunda para todos os tipos de cabelo. Sua fórmula inovadora forma um escudo protetor contra danos externos, como raios UV, poluição e calor do secador. Enriquecido com óleos naturais e vitaminas essenciais, este leave-in auxilia na redução do frizz, facilita o desembaraço, promove brilho intenso e maciez excepcional, além de proteger a cor dos fios tingidos. Ideal para uso diário, deixa os cabelos mais saudáveis, disciplinados e com aspecto naturalmente revitalizado.",
+    description: "Shampoo especial com ozônio para limpeza profunda",
     price: 159.90,
-    inci_name : "Ozon",
-    image: generateProductImage(1),
+    inci_name : "TESTE 1234",
+    image:  'asset/public/image/products/shampoo-ozon-kesen.png',
     pdf_link: 'https://www.bling.com.br/doc.view.php?id=47f8980c4a0613898ca8d7aa5f17b0bf',
     video_url: 'https://www.youtube.com/shorts/SGJN5zkP8Ro',
     composition: "Óleo de Coco, Ácido Hialurônico, Ácido Cítrico, Ácido Hialurônico, Ácido Cítrico",
     process_number: "21BGH-2356/001", 
     category: "Capilar Ozonizada",
-    stock: 15,
     rating: 5
   },
   {
@@ -317,5 +316,31 @@ export const bemEstarProducts = [
     image: "/images/produtos-bem-estar/mascara.jpg",
     category: "Bem Estar",
     stock: 22
+  }
+];
+
+export const acessorios =[
+  {
+    id: 1,
+    name: "Kit de Acessórios",
+    description: "Kit completo de acessórios para tratamentos capilares",
+  }
+  {
+    id: 2,
+    name: "Kit de Acessórios",
+    description: "Kit completo de acessórios para tratamentos capilares",
+  }
+];
+
+export const fragrancias = [
+  {
+    id: 1,
+    name: "Kit de Acessórios",
+    description: "Kit completo de acessórios para tratamentos capilares",
+  }
+  {
+    id: 2,
+    name: "Kit de Acessórios",
+    description: "Kit completo de acessórios para tratamentos capilares",
   }
 ];

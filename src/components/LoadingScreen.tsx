@@ -6,11 +6,11 @@ import Image from 'next/image';
 export default function LoadingScreen({ onLoadingComplete }: { onLoadingComplete: () => void }) {
   return (
     <motion.div
-      className="fixed inset-0 bg-white flex items-center justify-center z-50"
-      initial={{ opacity: 0 }}
+      className="fixed inset-0 bg-white flex items-center justify-center"
+      initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.3 }}
     >
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
@@ -26,7 +26,7 @@ export default function LoadingScreen({ onLoadingComplete }: { onLoadingComplete
         className="flex flex-col items-center"
       >
         <Image
-          src="/images/ozonteck-logo.png"
+          src="/images/OZONTECK-LOGO.png"
           alt="Ozonteck Logo"
           width={194}
           height={229}

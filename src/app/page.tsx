@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import Footer from '@/components/footer';
+import Footer from '@/components/Footer';
+import LoadingScreen from '@/components/LoadingScreen';
 
 interface Category {
   name: string;
@@ -14,7 +15,6 @@ interface Category {
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [showContent, setShowContent] = useState(false);
-  const [showFooter, setShowFooter] = useState(false);
 
   const categories: Category[] = [
     { name: 'Capilar Ozonizada', href: '/products/capilar-ozonizada' },
@@ -23,92 +23,43 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
+    if (!isLoading) {
       setTimeout(() => {
         setShowContent(true);
-        // Adiciona delay extra para o footer
-        setTimeout(() => setShowFooter(true), 500);
-      }, 200);
-    }, 1000);
-  }, []);
+      }, 300);
+    }
+  }, [isLoading]);
 
   return (
-    <>
+    <div className="min-h-screen bg-white">
       {isLoading ? (
-        <motion.div
-          className="fixed inset-0 bg-white flex items-center justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <motion.div
-            className="flex flex-col items-center"
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{
-              scale: 1,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 1,
-              ease: "easeOut"
-            }}
-          >
-            <Image
-              src="/images/OZONTECK-LOGO.png"
-              alt="Ozonteck Logo"
-              width={194}
-              height={229}
-              priority
-              className="mb-8"
-            />
-            <motion.div
-              className="h-1 bg-teal-500 rounded-full mt-6"
-              initial={{ width: 0 }}
-              animate={{ width: "200px" }}
-              transition={{
-                duration: 4,
-                ease: "linear"
-              }}
-            />
-          </motion.div>
-        </motion.div>
+        <LoadingScreen onLoadingComplete={() => setIsLoading(false)} />
       ) : (
-        <div className="flex flex-col min-h-screen">
-          <motion.div
-            className="flex-grow flex flex-col items-center justify-center bg-white p-4"
+        showContent && (
+          <motion.div 
+            className="flex flex-col min-h-screen bg-white"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
-            <motion.div
-              className="flex flex-col items-center"
-              initial={{ y: -20 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <Image
-                src="/images/OZONTECK-LOGO.png"
-                alt="Ozonteck Logo"
-                width={100}
-                height={100}
-                priority
-                className="mb-12"
-              />
-              
-              <p className="text-gray-600 mb-8 text-center">
-                Selecione a linha desejada
-              </p>
+            <div className="flex-grow flex flex-col items-center justify-center bg-white p-4">
+              <div className="flex flex-col items-center">
+                <Image
+                  src="/images/OZONTECK-LOGO.png"
+                  alt="Ozonteck Logo"
+                  width={100}
+                  height={100}
+                  priority
+                  className="mb-12"
+                />
+                
+                <p className="text-gray-600 mb-8 text-center">
+                  Selecione a linha desejada
+                </p>
 
-              <div className="flex flex-col gap-4 w-full max-w-sm">
-                {categories.map((category, index) => (
-                  <motion.div
-                    key={category.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 + index * 0.1 }}
-                  >
-                    <Link href={category.href}>
+                <div className="flex flex-col gap-4 w-full max-w-sm">
+                  {categories.map((category, index) => (
+                    <Link key={category.name} href={category.href}>
                       <motion.button
                         className="w-full py-4 px-6 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors"
                         whileHover={{ scale: 1.02 }}
@@ -117,23 +68,14 @@ export default function Home() {
                         {category.name}
                       </motion.button>
                     </Link>
-                  </motion.div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </motion.div>
+            </div>
+            {/* Footer removido daqui */}
           </motion.div>
-
-          {showFooter && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Footer />
-            </motion.div>
-          )}
-        </div>
+        )
       )}
-    </>
+    </div>
   );
 }
