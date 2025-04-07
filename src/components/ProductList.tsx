@@ -5,25 +5,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Product } from '@/types/product';
 import ProductCard from './ProductCard';
+import { capilarProducts, accessoriesProducts, nutraceuticsProducts, perfumeryProducts, healthProducts } from '@/data/products';
 
 export default function ProductList({ category }: { category: string }) {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch(`/api/products?category=${category.toLowerCase().replace(/ /g, '-')}`);
-        const data = await response.json();
-        setProducts(data);
-      } catch (error) {
-        console.error('Error fetching products:', error);
-      } finally {
-        setLoading(false);
-      }
+    const getAllProducts = () => {
+      const allProducts = [
+        ...capilarProducts,
+        ...accessoriesProducts,
+        ...nutraceuticsProducts,
+        ...perfumeryProducts,
+        ...healthProducts
+      ];
+      
+      // Updated filtering logic to ensure exact category match
+      const filteredProducts = allProducts.filter(product => {
+        const normalizedProductCategory = product.category.trim();
+        const normalizedRequestedCategory = category.trim();
+        return normalizedProductCategory === normalizedRequestedCategory;
+      });
+      
+      setProducts(filteredProducts);
+      setLoading(false);
     };
 
-    fetchProducts();
+    getAllProducts();
   }, [category]);
 
   if (loading) {
@@ -61,7 +70,7 @@ export default function ProductList({ category }: { category: string }) {
           </h1>
         </div>
 
-        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 md:gap-6 lg:gap-8  ">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
           {products.map((product) => (
             <ProductCard 
               key={product.id} 

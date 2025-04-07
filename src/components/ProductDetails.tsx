@@ -15,8 +15,11 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
         <div className="flex flex-col items-center">
           <div className="w-full max-w-4xl flex justify-between items-center mb-6 relative">
             <div className="absolute left-0">
-              <Link 
-                href={`/products/${product.category.toLowerCase().replace(/ /g, '-')}`}
+            <Link 
+                href={`/products/${product.category.toLowerCase()
+                  .normalize('NFD')
+                  .replace(/[\u0300-\u036f]/g, '')
+                  .replace(/ /g, '-')}`}
                 className="flex items-center bg-gray-100 hover:bg-gray-100 text-[#44BCAC] px-4 py-2 rounded-full transition-all"
               >
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,7 +35,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                 width={60}
                 height={60}
                 priority
-                className="rounded-2xl"
+                className=""
               />
             </div>          
           </div>

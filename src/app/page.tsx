@@ -18,7 +18,9 @@ export default function Home() {
 
   const categories: Category[] = [
     { name: 'Capilar Ozonizada', href: '/products/capilar-ozonizada' },
+    { name: 'Acessórios', href: '/products/acessorios' },
     { name: 'Nutracêuticos', href: '/products/nutraceuticos' },
+    { name: 'Perfumaria', href: '/products/perfumaria' },
     { name: 'Bem Estar', href: '/products/bem-estar' }
   ];
 
@@ -72,7 +74,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Footer removido daqui */}
           </motion.div>
         )
       )}

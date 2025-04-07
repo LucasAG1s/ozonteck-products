@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { capilarProducts, nutraceuticosProducts, bemEstarProducts } from '@/data/products';
+import { capilarProducts, nutraceuticsProducts, accessoriesProducts, perfumeryProducts, healthProducts } from '@/data/products';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -11,13 +11,22 @@ export async function GET(request: Request) {
       products = capilarProducts;
       break;
     case 'nutraceuticos':
-      products = nutraceuticosProducts;
+      products = nutraceuticsProducts;
       break;
     case 'bem-estar':
-      products = bemEstarProducts;
+      products = healthProducts;
+      break;
+      case 'acessorios':
+      products = accessoriesProducts;
+      break;
+    case 'perfumaria':
+      products = perfumeryProducts;
+      break;
+    case 'saude':
+      products = healthProducts;
       break;
     default:
-      products = [...capilarProducts, ...nutraceuticosProducts, ...bemEstarProducts];
+      products = [...capilarProducts, ...nutraceuticsProducts, ...accessoriesProducts, ...perfumeryProducts, ...healthProducts];
   }
 
   return NextResponse.json(products);
