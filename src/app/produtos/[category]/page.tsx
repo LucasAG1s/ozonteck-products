@@ -1,4 +1,3 @@
-import Layout from '@/components/Layout';
 import ProductList from '@/components/ProductList';
 
 interface PageProps {
@@ -11,9 +10,9 @@ export default async function CategoryPage({ params }: PageProps) {
   const decodedCategory = decodeURIComponent(resolvedParams.category);
   
   return (
-    <Layout>
+    <div>
       <ProductList category={decodedCategory} />
-    </Layout>
+    </div>
   );
 }
 
