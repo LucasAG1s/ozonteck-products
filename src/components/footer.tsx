@@ -1,14 +1,9 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { JSX } from 'react';
 
-interface FooterProps {
-  isVisible?: boolean;
-}
 
-export default function Footer() {
+
+export  function Footer() {
 
   return (
     <footer className="bg-[#F3F3F3] py-8 mt-auto" style={{ zIndex: 1 }}>
