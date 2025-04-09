@@ -8,8 +8,7 @@ interface FooterProps {
   isVisible?: boolean;
 }
 
-export default function Footer({ isVisible = true }: FooterProps): JSX.Element | null {
-  if (!isVisible) return null;
+export default function Footer() {
 
   return (
     <footer className="bg-[#F3F3F3] py-8 mt-auto" style={{ zIndex: 1 }}>
