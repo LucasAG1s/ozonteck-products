@@ -16,7 +16,7 @@ export default function CategorySelector({ categories, selectedCategory, onSelec
         <motion.button
           key={category}
           onClick={() => onSelectCategory(category)}
-          className={`py-3 px-6 rounded-lg text-white font-medium ${
+          className={`py-3 px-6 rounded-lg text-white font-medium cursor-pointer ${
             selectedCategory === category ? 'bg-teal-600' : 'bg-teal-500'
           }`}
           whileHover={{ scale: 1.02 }}

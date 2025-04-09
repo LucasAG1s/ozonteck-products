@@ -42,7 +42,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col items-center mb-0 md:mb-6 lg:mb-8">
             <div className="relative w-48 h-72 mb-6 rounded-2xl overflow-hidden">
               <Image
                 src={product.image}
@@ -52,7 +52,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                 priority
               />
             </div>
-            <h1 className="bg-gradient-to-r from-[#44BCAC] to-[#153A4E] bg-clip-text text-transparent text-xl sm:text-3xl font-medium text-center mb-3">
+            <h1 className="bg-gradient-to-r from-[#44BCAC] to-[#153A4E] bg-clip-text text-transparent text-xl sm:text-3xl font-medium text-center mb-0 md:mb-3">
               {product.name}
             </h1>
             <div className="flex gap-1">
@@ -63,8 +63,8 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
           </div>
 
           <div className="bg-gray-50 rounded-xl p-4">
-            <h2 className="text-black text-xl font-bold font-['Calibri] mb-2">Composição {product.name}</h2>
-            <p className="text-black font-bold font-['Calibri] mb-3">
+            <h2 className="text-black text-lg md:text-xl font-bold font-['Calibri] mb-2">Composição {product.name}</h2>
+            <p className="text-black text-sm md:text-xl font-bold font-['Calibri] mb-3">
               Nº DE PROCESSO: {product.process_number}
             </p>
             <div className="space-y-2 max-h-40 overflow-auto pr-2">

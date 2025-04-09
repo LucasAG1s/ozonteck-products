@@ -41,7 +41,7 @@ export default function Home() {
             className="flex flex-col min-h-screen bg-white"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.1 }}
           >
             <div className="flex-grow flex flex-col items-center justify-center bg-white p-4">
               <div className="flex flex-col items-center">
