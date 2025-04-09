@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 
 
-export  function Footer() {
+export function Footer() {
 
   return (
     <footer className="bg-[#F3F3F3] py-8 mt-auto" style={{ zIndex: 1 }}>
