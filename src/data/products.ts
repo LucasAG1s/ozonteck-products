@@ -1,5 +1,3 @@
-import { faker } from '@faker-js/faker';
-
 export const productCategories = [
   "Capilar Ozonizada",
   "Acessórios",
@@ -43,7 +41,7 @@ export const capilarProducts = [
     name: "Condicionador Ozonizado",
     description: "Condicionador com fórmula exclusiva ozonizada",
     price: 129.90,
-    image: "/images/products/capilar/condicionador-o-com-broto.webp",
+    image: "/images/products/capilar/condicionador-ozon-kesen.webp",
     category: "Capilar Ozonizada",
     inci_name: "Aqua, Ozone, Natural Extracts",
     rating: 5,
@@ -71,7 +69,7 @@ export const capilarProducts = [
     name: "Condicinador Kids - Ozon Splash",
     description: "Leave-in com tecnologia ozonizada para proteção dos fios",
     price: 89.90,
-    image: "/images/products/capilar/condicionado-ozon-splash-kids.webp",
+    image: "/images/products/capilar/condicionador-ozon-splash-kids.webp",
     category: "Capilar Ozonizada",
     inci_name: "Aqua, Ozone, Protective Compounds",
     rating: 5,
@@ -85,7 +83,7 @@ export const capilarProducts = [
     name: "Leave In Ozon Splash",
     description: "Máscara de tratamento intensivo com ozônio",
     price: 169.90,
-    image: "/images/products/capilar/leave-in-ozon-splash.webp",
+    image: "/images/products/capilar/leave-in-ozon-splash-kids.webp",
     category: "Capilar Ozonizada",
     inci_name: "Aqua, Ozone, Treatment Compounds",
     rating: 5,
@@ -225,7 +223,7 @@ export const capilarProducts = [
     name: "Shampoo Ozon Splash",
     description: "Spray finalizador com ozônio",
     price: 99.90,
-    image: "/images/products/capilar/shampoo-ozon-splash.webp",
+    image: "/images/products/capilar/shampoo-ozon-splash-kids.webp",
     category: "Capilar Ozonizada",
     inci_name: "Aqua, Ozone, Finishing Compounds",
     rating: 5,
@@ -239,7 +237,7 @@ export const capilarProducts = [
     name: "Soft Hair Ampola",
     description: "Spray finalizador com ozônio",
     price: 99.90,
-    image: "/images/products/capilar/softh-hair.webp",
+    image: "/images/products/capilar/soft-hair.webp",
     category: "Capilar Ozonizada",
     inci_name: "Aqua, Ozone, Finishing Compounds",
     rating: 5,
@@ -725,7 +723,7 @@ export const nutraceuticsProducts = [
     name: "Ozon Immunity",
     description: "Suplemento para imunidade com tecnologia ozonizada",
     price: 129.90,
-    image: "/images/products/nutraceuticos/ozon-munity-caixa.webp.webp",
+    image: "/images/products/nutraceuticos/ozon-munity-caixa.webp",
     category: "Nutracêuticos",
     inci_name: "Immunity Complex",
     rating: 5,
@@ -1285,10 +1283,10 @@ export const perfumeryProducts = [
   },
   {
     id: 81,
-    name: "Vida Bella",
+    name: "Vip Girl Vip",
     description: "Perfume feminino com notas mágicas",
     price: 199.90,
-    image: "/images/products/perfumaria/vida-bella.webp",
+    image: "/images/products/perfumaria/vip-girl-vip.webp",
     category: "Perfumaria",
     inci_name: "Parfum, Alcohol Denat",
     rating: 5,
@@ -1305,7 +1303,7 @@ export const perfumeryProducts = [
 
 export const healthProducts = [
   {
-    id: 51,
+    id: 82,
     name: "Acai Fusion",
     description: "Spray facial com tecnologia ozonizada para limpeza profunda",
     price: 89.90,
@@ -1319,7 +1317,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=acar-fusion"
   },
   {
-    id: 52,
+    id: 83,
     name: "Energético Xbooster",
     description: "Energético com tecnologia ozonizada para mais disposição",
     price: 119.90,
@@ -1333,7 +1331,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=energetico-ozon"
   },
   {
-    id: 53,
+    id: 84,
     name: "Esfoliante Oxylush",
     description: "Esfoliante facial com tecnologia ozonizada",
     price: 79.90,
@@ -1347,7 +1345,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=esfoliante-oxyplus"
   },
   {
-    id: 54,
+    id: 85,
     name: "Hidratante Speed Black",
     description: "Hidratante corporal com ação rápida e tecnologia ozonizada",
     price: 99.90,
@@ -1361,7 +1359,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=hidratante-speed-black"
   },
   {
-    id: 55,
+    id: 86,
     name: "Hidratante VG SEXY",
     description: "Hidratante facial com tecnologia ozonizada de nova geração",
     price: 109.90,
@@ -1375,7 +1373,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=hidratante-ng-se"
   },
   {
-    id: 56,
+    id: 87,
     name: "Life Shii",
     description: "Creme facial rejuvenescedor com tecnologia ozonizada",
     price: 149.90,
@@ -1389,7 +1387,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=life-skin"
   },
   {
-    id: 57,
+    id: 88,
     name: "Mind Chai",
     description: "Suplemento para foco e concentração com tecnologia ozonizada",
     price: 129.90,
@@ -1403,7 +1401,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=mind-chai"
   },
   {
-    id: 58,
+    id: 89,
     name: "Ozon Cream",
     description: "Creme multifuncional com tecnologia ozonizada",
     price: 89.90,
@@ -1417,7 +1415,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=ozon-cream"
   },
   {
-    id: 59,
+    id: 90,
     name: "Ozon Fresh",
     description: "Spray refrescante com tecnologia ozonizada",
     price: 69.90,
@@ -1431,7 +1429,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=ozon-fresh"
   },
   {
-    id: 60,
+    id: 91,
     name: "Pure Hot",
     description: "Gel térmico com tecnologia ozonizada",
     price: 79.90,
@@ -1445,7 +1443,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=pure-hot"
   },
   {
-    id: 61,
+    id: 92,
     name: "Revita Tonic",
     description: "Tônico facial revitalizante com tecnologia ozonizada",
     price: 89.90,
@@ -1459,7 +1457,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=revita-tonic"
   },
   {
-    id: 62,
+    id: 93,
     name: "Sabonete OX3",
     description: "Sabonete facial com tecnologia ozonizada tripla",
     price: 59.90,
@@ -1473,7 +1471,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=sabonete-co3"
   },
   {
-    id: 63,
+    id: 94,
     name: "Serum Facial",
     description: "Sérum facial concentrado com tecnologia ozonizada",
     price: 129.90,
@@ -1487,7 +1485,7 @@ export const healthProducts = [
     video_url: "https://youtube.com/watch?v=serum-facial"
   },
   {
-    id: 64,
+    id: 95,
     name: "Soft",
     description: "Creme hidratante suave com tecnologia ozonizada",
     price: 69.90,

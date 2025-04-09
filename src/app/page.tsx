@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import Footer from '@/components/Footer';
 import LoadingScreen from '@/components/LoadingScreen';
 
 interface Category {
@@ -60,7 +59,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex flex-col gap-4 w-full max-w-sm">
-                  {categories.map((category, index) => (
+                  {categories.map((category) => (
                     <Link key={category.name} href={category.href}>
                       <motion.button
                         className="w-full py-4 px-6 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors"
