@@ -6,6 +6,40 @@ export const productCategories = [
   "Bem Estar"
 ];
 
+const defaultUsageInstructions = `INSTRUÇÕES GERAIS DE USO
+
+• Antes de usar qualquer produto ozonizado, leia atentamente as instruções específicas do produto.
+
+RECOMENDAÇÕES IMPORTANTES
+
+• Mantenha o produto em local fresco e arejado
+• Evite exposição direta à luz solar
+• Mantenha fora do alcance de crianças
+• Conserve na embalagem original
+• Não utilize se a embalagem estiver violada
+• Temperatura ideal de armazenamento: entre 15°C e 30°C
+
+PRECAUÇÕES
+
+• Em caso de sensibilidade, suspenda o uso e procure orientação médica
+• Uso externo
+• Não ingerir
+• Evite contato com os olhos
+• Em caso de contato com os olhos, lave abundantemente com água
+
+CONTRAINDICAÇÕES
+
+• Não utilize em caso de hipersensibilidade aos componentes da fórmula
+• Em caso de irritação ou vermelhidão, suspenda o uso
+• Gestantes e lactantes devem consultar um profissional de saúde antes do uso
+
+COMPOSIÇÃO
+
+• Verifique a composição específica na embalagem do produto
+• Todos os produtos são desenvolvidos com tecnologia ozonizada patenteada
+
+Para mais informações ou dúvidas sobre o uso, entre em contato com nossa central de atendimento.`;
+
 
 export const capilarProducts = [
   {
@@ -20,6 +54,7 @@ export const capilarProducts = [
     process_number: "25351.123456/2023-01",
     composition: "Água ozonizada, extratos naturais, vitaminas",
     pdf_link: "/docs/ativador-master.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ativador-master"
   },
   {
@@ -34,6 +69,7 @@ export const capilarProducts = [
     process_number: "25351.123457/2023-01",
     composition: "Água ozonizada, óleos naturais, proteínas",
     pdf_link: "/docs/condicionador-master.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=condicionador-master"
   },
   {
@@ -48,6 +84,7 @@ export const capilarProducts = [
     process_number: "25351.123458/2023-01",
     composition: "Água ozonizada, extratos naturais, aminoácidos",
     pdf_link: "/docs/condicionador-ozonizado.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=condicionador-ozonizado"
   },
   {
@@ -62,6 +99,7 @@ export const capilarProducts = [
     process_number: "25351.123459/2023-01",
     composition: "Água ozonizada, ativos especiais, proteínas",
     pdf_link: "/docs/condicionador-plus.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=condicionador-plus"
   },
   {
@@ -76,6 +114,7 @@ export const capilarProducts = [
     process_number: "25351.123460/2023-01",
     composition: "Água ozonizada, compostos protetivos, vitaminas",
     pdf_link: "/docs/leave-in.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=leave-in"
   },
   {
@@ -90,6 +129,7 @@ export const capilarProducts = [
     process_number: "25351.123461/2023-01",
     composition: "Água ozonizada, compostos de tratamento, óleos essenciais",
     pdf_link: "/docs/mascara-master.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=mascara-master"
   },
   {
@@ -104,6 +144,7 @@ export const capilarProducts = [
     process_number: "25351.123462/2023-01",
     composition: "Água ozonizada, compostos nutritivos, proteínas",
     pdf_link: "/docs/mascara-nutritiva.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=mascara-nutritiva"
   },
   {
@@ -118,6 +159,7 @@ export const capilarProducts = [
     process_number: "25351.123463/2023-01",
     composition: "Água ozonizada, compostos reconstrutivos, queratina",
     pdf_link: "/docs/mascara-ozonizada.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=mascara-ozonizada"
   },
   {
@@ -132,6 +174,7 @@ export const capilarProducts = [
     process_number: "25351.123464/2023-01",
     composition: "Água ozonizada, compostos premium, aminoácidos",
     pdf_link: "/docs/mascara-premium.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=mascara-premium"
   },
   {
@@ -146,6 +189,7 @@ export const capilarProducts = [
     process_number: "25351.123465/2023-01",
     composition: "Água ozonizada, ativos reconstrutivos, proteínas",
     pdf_link: "/docs/reconstrutor.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=reconstrutor"
   },
   {
@@ -160,6 +204,7 @@ export const capilarProducts = [
     process_number: "25351.123466/2023-01",
     composition: "Água ozonizada, compostos de limpeza, extratos naturais",
     pdf_link: "/docs/shampoo-master.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=shampoo-master"
   },
   {
@@ -174,6 +219,7 @@ export const capilarProducts = [
     process_number: "25351.123467/2023-01",
     composition: "Água ozonizada, ativos de limpeza profunda, vitaminas",
     pdf_link: "/docs/shampoo-ozonizado.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=shampoo-ozonizado"
   },
   {
@@ -188,6 +234,7 @@ export const capilarProducts = [
     process_number: "25351.123468/2023-01",
     composition: "Água ozonizada, compostos refrescantes, mentol",
     pdf_link: "/docs/shampoo-fresh.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=shampoo-fresh"
   },
   {
@@ -202,6 +249,7 @@ export const capilarProducts = [
     process_number: "25351.123469/2023-01",
     composition: "Água ozonizada, ativos especiais de limpeza, proteínas",
     pdf_link: "/docs/shampoo-plus.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=shampoo-plus"
   },
   {
@@ -216,6 +264,7 @@ export const capilarProducts = [
     process_number: "25351.123470/2023-01",
     composition: "Água ozonizada, compostos finalizadores, silicones",
     pdf_link: "/docs/soft-hair.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=soft-hair"
   },
   {
@@ -230,6 +279,7 @@ export const capilarProducts = [
     process_number: "25351.123470/2023-01",
     composition: "Água ozonizada, compostos finalizadores, silicones",
     pdf_link: "/docs/soft-hair.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=soft-hair"
   },
   {
@@ -244,6 +294,7 @@ export const capilarProducts = [
     process_number: "25351.123470/2023-01",
     composition: "Água ozonizada, compostos finalizadores, silicones",
     pdf_link: "/docs/soft-hair.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=soft-hair"
   }
 ];
@@ -261,6 +312,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-branco.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-branco'
   },
   {
@@ -275,6 +327,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-cinza.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-cinza'
   },
   {
@@ -289,6 +342,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-azul.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-azul'
   },
   {
@@ -303,6 +357,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-azul-claro.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-azul-claro'
   },
   {
@@ -317,6 +372,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-branco-classic.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-branco-classic'
   },
   {
@@ -331,6 +387,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto'
   },
   {
@@ -345,6 +402,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -359,6 +417,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -373,6 +432,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -387,6 +447,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -401,6 +462,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -415,6 +477,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -429,6 +492,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -443,6 +507,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -457,6 +522,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -471,6 +537,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -485,6 +552,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -499,6 +567,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -513,6 +582,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -527,6 +597,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
   {
@@ -541,6 +612,7 @@ export const accessoriesProducts = [
     process_number: 'N/A',
     composition: '100% Algodão',
     pdf_link: '/docs/bone-preto-premium.pdf',
+    instructions:defaultUsageInstructions,
     video_url: 'https://youtube.com/watch?v=bone-preto-premium'
   },
 
@@ -560,6 +632,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123471/2023-01",
     composition: "Cálcio ozonizado, vitamina D3, minerais essenciais",
     pdf_link: "/docs/amino-ozon-calcio.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=amino-ozon-calcio"
   },
   {
@@ -574,6 +647,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123472/2023-01",
     composition: "Complexo termogênico, extratos naturais, vitaminas",
     pdf_link: "/docs/body-slim.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=body-slim"
   },
   {
@@ -588,6 +662,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123473/2023-01",
     composition: "Complexo energético, vitaminas do complexo B, minerais",
     pdf_link: "/docs/ck-ozon-real.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ck-ozon-real"
   },
   {
@@ -602,6 +677,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123473/2023-01",
     composition: "Complexo energético, vitaminas do complexo B, minerais",
     pdf_link: "/docs/ck-ozon-real.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ck-ozon-real"
   },
   {
@@ -616,6 +692,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123473/2023-01",
     composition: "Complexo energético, vitaminas do complexo B, minerais",
     pdf_link: "/docs/ck-ozon-real.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ck-ozon-real"
   },
   {
@@ -630,6 +707,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123473/2023-01",
     composition: "Complexo energético, vitaminas do complexo B, minerais",
     pdf_link: "/docs/ck-ozon-real.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ck-ozon-real"
   },
 
@@ -645,6 +723,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123474/2023-01",
     composition: "Melatonina, triptofano, vitaminas e minerais",
     pdf_link: "/docs/dream-bliss.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=dream-bliss"
   },
   {
@@ -659,6 +738,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123475/2023-01",
     composition: "Colágeno, vitamina C, ácido hialurônico",
     pdf_link: "/docs/luminous-vita.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=luminous-vita"
   },
   {
@@ -673,6 +753,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123476/2023-01",
     composition: "Complexo multivitamínico, minerais, antioxidantes",
     pdf_link: "/docs/nano-blend.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=nano-blend"
   },
   {
@@ -687,6 +768,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123477/2023-01",
     composition: "Biotina, zinco, vitaminas do complexo B",
     pdf_link: "/docs/nk-cap.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=nk-cap"
   },
   {
@@ -701,6 +783,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123478/2023-01",
     composition: "EPA, DHA, vitamina E",
     pdf_link: "/docs/omega-3.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=omega-3"
   },
   {
@@ -715,6 +798,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123478/2023-01",
     composition: "EPA, DHA, vitamina E",
     pdf_link: "/docs/omega-3.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=omega-3"
   },
 
@@ -730,6 +814,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123479/2023-01",
     composition: "Vitamina C, zinco, própolis",
     pdf_link: "/docs/ozon-immunity.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ozon-immunity"
   },
   {
@@ -744,6 +829,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123480/2023-01",
     composition: "Três formas de magnésio, vitamina B6",
     pdf_link: "/docs/power-tri-magnesium.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=power-tri-magnesium"
   },
   {
@@ -758,6 +844,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123481/2023-01",
     composition: "Complexo vitamínico premium, minerais, antioxidantes",
     pdf_link: "/docs/virtuous-caps.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=virtuous-caps"
   },
   {
@@ -772,6 +859,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123482/2023-01",
     composition: "Vitamina K2 (MK-7), vitamina D3, cálcio",
     pdf_link: "/docs/vitamina-k2.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=vitamina-k2"
   },
   {
@@ -786,6 +874,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123483/2023-01",
     composition: "Complexo multivitamínico avançado, minerais essenciais",
     pdf_link: "/docs/vita-ozon-plus.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=vita-ozon-plus"
   },
   {
@@ -800,6 +889,7 @@ export const nutraceuticsProducts = [
     process_number: "25351.123484/2023-01",
     composition: "Complexo energético premium, cafeína, taurina",
     pdf_link: "/docs/xbooster.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=xbooster"
   }
 ];
@@ -817,6 +907,7 @@ export const perfumeryProducts = [
     process_number: "25351.123485/2023-01",
     composition: "Álcool, fragrância, fixadores naturais",
     pdf_link: "/docs/303-woman.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=303-woman"
   },
   {
@@ -831,6 +922,7 @@ export const perfumeryProducts = [
     process_number: "25351.123486/2023-01",
     composition: "Álcool, fragrância, fixadores naturais",
     pdf_link: "/docs/303-men.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=303-men"
   },
   {
@@ -845,6 +937,7 @@ export const perfumeryProducts = [
     process_number: "25351.123487/2023-01",
     composition: "Álcool, fragrância premium, fixadores naturais",
     pdf_link: "/docs/303-vip-men.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=303-vip-men"
   },
   {
@@ -859,6 +952,7 @@ export const perfumeryProducts = [
     process_number: "25351.123488/2023-01",
     composition: "Álcool, fragrância, óleos essenciais",
     pdf_link: "/docs/alem.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=alem"
   },
   {
@@ -873,6 +967,7 @@ export const perfumeryProducts = [
     process_number: "25351.123489/2023-01",
     composition: "Álcool, fragrância, essências florais",
     pdf_link: "/docs/angelical.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=angelical"
   },
   {
@@ -887,6 +982,7 @@ export const perfumeryProducts = [
     process_number: "25351.123490/2023-01",
     composition: "Álcool, fragrância, óleos essenciais",
     pdf_link: "/docs/aventura.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=aventura"
   },
   {
@@ -901,6 +997,7 @@ export const perfumeryProducts = [
     process_number: "25351.123491/2023-01",
     composition: "Álcool, fragrância, essências marinhas",
     pdf_link: "/docs/blue-sky.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=blue-sky"
   },
   {
@@ -915,6 +1012,7 @@ export const perfumeryProducts = [
     process_number: "25351.123492/2023-01",
     composition: "Álcool, fragrância, especiarias orientais",
     pdf_link: "/docs/cappadocia.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=cappadocia"
   },
   {
@@ -929,6 +1027,7 @@ export const perfumeryProducts = [
     process_number: "25351.123493/2023-01",
     composition: "Álcool, fragrância, essências florais",
     pdf_link: "/docs/cinderela.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=cinderela"
   },
   {
@@ -943,6 +1042,7 @@ export const perfumeryProducts = [
     process_number: "25351.123494/2023-01",
     composition: "Álcool, fragrância premium, fixadores",
     pdf_link: "/docs/dg-red.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=dg-red"
   },
   {
@@ -957,6 +1057,7 @@ export const perfumeryProducts = [
     process_number: "25351.123495/2023-01",
     composition: "Álcool, fragrância, essências delicadas",
     pdf_link: "/docs/doucinha.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=doucinha"
   },
   {
@@ -971,6 +1072,7 @@ export const perfumeryProducts = [
     process_number: "25351.123496/2023-01",
     composition: "Álcool, fragrância, fixadores naturais",
     pdf_link: "/docs/easy-line.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=easy-line"
   },
   {
@@ -985,6 +1087,7 @@ export const perfumeryProducts = [
     process_number: "25351.123497/2023-01",
     composition: "Álcool, fragrância premium, óleos essenciais",
     pdf_link: "/docs/femme.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=femme"
   },
   {
@@ -999,6 +1102,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1013,6 +1117,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1027,6 +1132,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1041,6 +1147,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1055,6 +1162,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1069,6 +1177,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1083,6 +1192,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1097,6 +1207,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1111,6 +1222,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1125,6 +1237,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1139,6 +1252,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1153,6 +1267,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1167,6 +1282,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1181,6 +1297,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1195,6 +1312,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1209,6 +1327,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1223,6 +1342,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1237,6 +1357,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1251,6 +1372,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1265,6 +1387,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1279,6 +1402,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
   {
@@ -1293,6 +1417,7 @@ export const perfumeryProducts = [
     process_number: "25351.123498/2023-01",
     composition: "Álcool, fragrância, essências especiais",
     pdf_link: "/docs/fantastica.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=fantastica"
   },
 
@@ -1314,6 +1439,7 @@ export const healthProducts = [
     process_number: "25351.123499/2023-01",
     composition: "Água ozonizada, ativos de limpeza, extratos naturais",
     pdf_link: "/docs/acar-fusion.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=acar-fusion"
   },
   {
@@ -1328,6 +1454,7 @@ export const healthProducts = [
     process_number: "25351.123500/2023-01",
     composition: "Água ozonizada, complexo energético, vitaminas",
     pdf_link: "/docs/energetico-ozon.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=energetico-ozon"
   },
   {
@@ -1342,6 +1469,7 @@ export const healthProducts = [
     process_number: "25351.123501/2023-01",
     composition: "Água ozonizada, partículas esfoliantes naturais, hidratantes",
     pdf_link: "/docs/esfoliante-oxyplus.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=esfoliante-oxyplus"
   },
   {
@@ -1356,6 +1484,7 @@ export const healthProducts = [
     process_number: "25351.123502/2023-01",
     composition: "Água ozonizada, complexo hidratante, vitamina E",
     pdf_link: "/docs/hidratante-speed-black.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=hidratante-speed-black"
   },
   {
@@ -1370,6 +1499,7 @@ export const healthProducts = [
     process_number: "25351.123503/2023-01",
     composition: "Água ozonizada, complexo hidratante avançado, antioxidantes",
     pdf_link: "/docs/hidratante-ng-se.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=hidratante-ng-se"
   },
   {
@@ -1384,6 +1514,7 @@ export const healthProducts = [
     process_number: "25351.123504/2023-01",
     composition: "Água ozonizada, complexo anti-idade, colágeno",
     pdf_link: "/docs/life-skin.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=life-skin"
   },
   {
@@ -1398,6 +1529,7 @@ export const healthProducts = [
     process_number: "25351.123505/2023-01",
     composition: "Complexo cognitivo, vitaminas do complexo B, minerais",
     pdf_link: "/docs/mind-chai.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=mind-chai"
   },
   {
@@ -1412,6 +1544,7 @@ export const healthProducts = [
     process_number: "25351.123506/2023-01",
     composition: "Água ozonizada, complexo multifuncional, vitaminas",
     pdf_link: "/docs/ozon-cream.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ozon-cream"
   },
   {
@@ -1426,6 +1559,7 @@ export const healthProducts = [
     process_number: "25351.123507/2023-01",
     composition: "Água ozonizada, mentol, óleos essenciais",
     pdf_link: "/docs/ozon-fresh.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=ozon-fresh"
   },
   {
@@ -1440,6 +1574,7 @@ export const healthProducts = [
     process_number: "25351.123508/2023-01",
     composition: "Água ozonizada, complexo térmico, ativos naturais",
     pdf_link: "/docs/pure-hot.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=pure-hot"
   },
   {
@@ -1454,6 +1589,7 @@ export const healthProducts = [
     process_number: "25351.123509/2023-01",
     composition: "Água ozonizada, complexo revitalizante, antioxidantes",
     pdf_link: "/docs/revita-tonic.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=revita-tonic"
   },
   {
@@ -1468,6 +1604,7 @@ export const healthProducts = [
     process_number: "25351.123510/2023-01",
     composition: "Água ozonizada, complexo triplo de limpeza, hidratantes",
     pdf_link: "/docs/sabonete-co3.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=sabonete-co3"
   },
   {
@@ -1482,6 +1619,7 @@ export const healthProducts = [
     process_number: "25351.123511/2023-01",
     composition: "Água ozonizada, ativos concentrados, ácido hialurônico",
     pdf_link: "/docs/serum-facial.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=serum-facial"
   },
   {
@@ -1496,6 +1634,7 @@ export const healthProducts = [
     process_number: "25351.123512/2023-01",
     composition: "Água ozonizada, complexo hidratante suave, aloe vera",
     pdf_link: "/docs/soft.pdf",
+    instructions:defaultUsageInstructions,
     video_url: "https://youtube.com/watch?v=soft"
   }
 ];

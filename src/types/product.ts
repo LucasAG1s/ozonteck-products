@@ -12,5 +12,6 @@ export interface Product {
   process_number?: string;
   composition?: string;
   pdf_link: Url;
+  instructions: string;
   video_url: Url;
 }
