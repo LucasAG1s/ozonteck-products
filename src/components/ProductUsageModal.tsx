@@ -43,6 +43,7 @@ export function ProductUsageModal({
         className="relative w-full max-w-3xl h-[60vh] overflow-hidden rounded-xl bg-white"
         onClick={(e) => e.stopPropagation()}
       >
+      
         <div className="flex flex-col h-full">
           <div className="bg-[#44BCAC] p-6">
             <div className="flex justify-between items-center">
