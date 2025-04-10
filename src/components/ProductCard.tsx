@@ -11,7 +11,7 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <Link 
-      href={`/products/${product.category.toLowerCase().replace(/ /g, '-')}/${product.id}`}
+    href={`/products/${product.category.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-')}/${product.id}`}
       className="bg-[#F3F3F3] rounded-xl sm:rounded-3xl p-2 sm:p-6 flex flex-col items-center hover:shadow-lg transition-shadow">
       <div className="relative w-full aspect-[3/4] mb-2 sm:mb-4 rounded-xl overflow-hidden">
         <Image

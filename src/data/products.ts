@@ -41,6 +41,7 @@ COMPOSIÇÃO
 Para mais informações ou dúvidas sobre o uso, entre em contato com nossa central de atendimento.`;
 
 
+
 export const capilarProducts = [
   {
     id: 1,
