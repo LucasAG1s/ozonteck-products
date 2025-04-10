@@ -40,7 +40,7 @@ export const categories = [
     id: 4,
     name: "Perfumaria",
     productCount: countProductsByCategory("Perfumaria"),
-    image: "/images/products/perfumaria/303-men.webp",
+    image: "/images/backgrounds/categories/fragrancias.webp",
     slug: "perfumaria",
     backgroundImage: "/images/backgrounds/categories/fragrancias.webp"
   },
